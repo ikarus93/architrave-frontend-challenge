@@ -1,0 +1,105 @@
+body {
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #F25A05;
+  color: #001628;
+  overflow: auto;
+}
+
+header {
+  margin-top: 30px;
+}
+
+header img {
+  width: 8rem;
+  height: 8rem;
+  margin: 0 2.7rem;
+}
+header h4 {
+  display: inline-block;
+  font-family: "Indie Flower", cursive;
+  font-size: 2rem;
+}
+
+/* Need to change the top margin to adapt elements position to margin created by pikachus ears*/
+header img:last-child {
+  margin-top: 1.7rem !important;
+}
+
+#search {
+  width: 20%;
+  margin-top: 2rem;
+  padding: 1rem;
+  height: 42.5px;
+  line-height: 30px;
+  outline: 0;
+  border: 1px;
+  font-size: 1em;
+  background-color: inherit;
+  color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+/*Change input placeholder color as explained in https://developer.mozilla.org/en-US/docs/Web/CSS/::placeholder*/
+::placeholder {
+  color: white;
+}
+.wrapper {
+  margin-top: 3rem;
+  font-family: "Noto Sans JP", sans-serif;
+  text-transform: capitalize;
+}
+
+.model {
+  list-style: none;
+  border-bottom: 1px solid #001628;
+  width: 50%;
+  margin: auto;
+}
+
+.model * {
+  margin: 1.3rem;
+}
+
+.model span {
+  font-size: 1.3rem;
+}
+
+.overlay {
+  background-color: rgb(0, 22, 40, 0.7);
+  color: white;
+  position: fixed;
+  width: 80vw;
+  margin: auto;
+  /* Center the div with transform and left properties */
+  left: 50%;
+  transform: translate(-50%, 0);
+  border: 1px solid yellow;
+  border-radius: 5px;
+}
+
+.overlay .list-content {
+  width: 50%;
+  margin-top: 5%;
+}
+.overlay li {
+  border: none;
+  list-style-type: square;
+  margin-top: 1rem;
+  font-family: "Indie Flower", cursive;
+  font-size: 1.5rem;
+}
+
+/* Media Queries */
+/* Fix header image layout breaking below 800px */
+@media only screen and (max-width: 800px) {
+  header img {
+    display: block;
+  }
+  header h4 {
+    display: block;
+    margin-left: -70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
