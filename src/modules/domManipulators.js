@@ -135,4 +135,4 @@ function loadSubList(url, name) {
   })
 }
 
-export { createListView, clearListView }
+export { createListView, clearListView, createEvolutionChain }

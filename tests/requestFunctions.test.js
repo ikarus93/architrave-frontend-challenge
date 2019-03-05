@@ -1,4 +1,4 @@
-import { fetchData } from "./src/modules/requestFunctions.js";
+import { fetchData } from "../src/modules/requestFunctions.js";
 
 
 test("Retrieves promise with data of all 807 pokemons from REST Api", () => {
@@ -22,7 +22,7 @@ test("Retrieves promise with data for specific pokemon from REST Api", () => {
     })
 })
 
-test("Retrieves evolution chain for specific pokemon from REST Api", () => {
+test("Retrieves evolution chain for specific pokemon (squirtle) from REST Api", () => {
     
     expect.assertions(3);
     
