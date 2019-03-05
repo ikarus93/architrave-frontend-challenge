@@ -1,6 +1,6 @@
 "use strict";
-
-export function fetchData(url) {
+const fetch = require("node-fetch");
+ export function fetchData(url) {
   /* Gets a list of species via the https://pokeapi.co/api/v2/pokemon-species/ endpoint.
      Gets species specific data via https://pokeapi.co/api/v2/pokemon-species/id/ endpoint.
      Returns a Promise that resolves with the captured species names or species specific data depending on url passed in */
@@ -12,3 +12,5 @@ export function fetchData(url) {
       .catch(err => reject(err));
   });
 }
+
+
