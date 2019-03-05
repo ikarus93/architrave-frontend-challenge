@@ -1,4 +1,4 @@
-import { fetchData } from "../modules/requestFunctions.js";
+import { fetchData } from "./src/modules/requestFunctions.js";
 
 
 test("Retrieves promise with data of all 807 pokemons from REST Api", () => {
